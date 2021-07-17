@@ -1,0 +1,209 @@
+@import url(var.css);
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Be Vietnam', sans-serif;
+    background: url(../img/bg-tablet-pattern.svg);
+    background-size: 450px;
+    background-position: 50px -180px;
+    background-repeat:no-repeat;
+}
+
+header div.main_header{
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header div.main_header i.fa-bars{
+    margin:5px;
+    font-size: 25px;
+    color: var(--color_text_dark);
+}
+
+header div.main_header nav.site_nav{
+    display: none;
+}
+
+header div.main_header nav.site_nav ul{
+display: flex;
+justify-content:space-evenly;
+align-items: center;
+}
+
+header nav.site_nav ul li{
+    list-style: none;
+    margin: 5px;
+    
+    }
+
+header nav.site_nav ul li a{
+    text-decoration: none;
+    color: var(--color_text_dark);
+    font-weight: 700;
+    
+
+}
+
+header nav.site_nav ul li a:hover{
+    color: var(--color_text_lightgr);
+    cursor: pointer;
+}
+
+header div.main_header button.get_started{
+    display: none;
+    
+}   
+button.get_started{
+    background: var(--color_vivid);
+    border:none;
+    width: 135px;
+    height: 45px;
+    border-radius: 40px 40px 40px 40px;
+    color: var(--color_text_clear);
+    font-weight: 700;
+    margin: 10px 5px;
+    
+}
+button.get_started:hover{
+    
+}
+
+/* /////////// MAIN ////////// */
+
+main div.upper_content{
+    display: flex;
+    flex-direction: column;
+}
+
+main div.upper_content div.prim_description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main div.upper_content div.prim_description h1{
+    text-align: center;
+    color: var(--color_text_dark);
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin:10px 15px;
+}
+
+p.dark_small{
+    text-align: center;
+    color: var(--color_text_light);
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin:10px;
+
+}
+
+main div.main_content{
+    display: flex;
+    flex-flow: row  wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main div.main_content div.different{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main div.main_content div.different h2{
+    text-align: center;
+    color: var(--color_text_dark);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin:10px 15px;
+}
+
+
+main div.main_content div.dual_vertical h4{
+background: var(--color_bkgrnd_lightvivid);
+color: var(--color_text_dark);
+line-height: 2.4rem;
+text-align: left;
+margin-left: 20px;
+border-radius: 40px 0 0 40px;
+}
+
+main div.main_content div.dual_vertical h4::before{
+    content: "01";
+    background: var(--color_vivid);
+    border:none;
+    display: inline-block;
+    text-align: center;
+    width: 4.2rem;
+    height: 2.4rem;
+    margin-right: 18px;
+    border-radius: 40px 40px 40px 40px;
+    color: var(--color_text_clear);
+    font-weight: 700;
+}
+
+main div.main_content div.dual_vertical h4.second::before{
+
+    content: "02";
+}
+
+main div.main_content div.dual_vertical h4.third::before{
+    content: "03";
+}
+
+main div.main_content div.dual_vertical p{
+    font-size: 0.9rem;
+    color: var(--color_text_light);
+    line-height: 1.5rem;
+    margin: 5px 10px 40px 20px;
+
+}
+
+
+
+
+
+
+
+
+@media (min-width: 460px){
+
+    
+    
+    
+}
+@media (min-width: 625px){
+    header div.main_header i.fa-bars{
+        display:none; 
+    }
+    header div.main_header nav.site_nav{
+        display:initial;
+    }
+    
+}
+
+
+@media (min-width: 768px){
+    header div.main_header button.get_started{
+        display:initial;
+    }
+}

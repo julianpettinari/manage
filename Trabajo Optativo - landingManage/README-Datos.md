@@ -1,0 +1,32 @@
+### Desarrollo continuo
+
+Utilice esta sección para delinear las áreas en las que desea continuar enfocándose en proyectos futuros. Estos podrían ser conceptos con los que aún no se siente completamente cómodo o técnicas que encontró útiles que desea refinar y perfeccionar.
+
+Dudas al momento de escribir código:
+background directamente en el body?
+
+
+
+Datos investigados
+- Cuando utilizar section y cuando div.
+agregar el numero 1, 2 y 3 como un ::before
+
+- Como realizar un menu desplegable para el nav mobile.
+
+- como realizar el slider con animacion
+# https://www.youtube.com/watch?v=oP5472drWiI
+
+overflow:hidden
+y una animation con porcentajes. margin-left
+
+#  https://rolandocaldas.com/html5/slider-css-sin-javascript-automatico
+
+
+### Recursos útiles
+
+- [Ejemplo de recurso 1] (https://www.example.com) - Esto me ayudó por la razón XYZ. Realmente me gustó este patrón y lo usaré en el futuro.
+- [Ejemplo de recurso 2] (https://www.example.com) - Este es un artículo asombroso que finalmente me ayudó a entender XYZ. Se lo recomendaría a cualquiera que todavía esté aprendiendo este concepto.
+
+## Autor
+
+Julián Carlos Pettinari

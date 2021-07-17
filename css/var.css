@@ -1,0 +1,9 @@
+:root{
+    --color_text_dark: #323851;
+    --color_text_light: #B3B2B7;
+    --color_text_clear: #FFFFFF;
+    --color_text_lightgr: #8C8C94;
+    --color_vivid:#F3603C;
+    --color_bkgrnd_light: #FAFAFA;
+    --color_bkgrnd_dark: #1E1E26;
+    --color_bkgrnd_lightvivid:rgb(255, 239, 234);
