@@ -22,6 +22,9 @@ y una animation con porcentajes. margin-left
 #  https://rolandocaldas.com/html5/slider-css-sin-javascript-automatico
 
 
+-como puedo agregar favicon?
+
+
 ### Recursos útiles
 
 - [Ejemplo de recurso 1] (https://www.example.com) - Esto me ayudó por la razón XYZ. Realmente me gustó este patrón y lo usaré en el futuro.

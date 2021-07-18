@@ -8,6 +8,7 @@
 
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Be Vietnam', sans-serif;
@@ -45,14 +46,15 @@ align-items: center;
 header nav.site_nav ul li{
     list-style: none;
     margin: 5px;
-    
+    flex-shrink: 0;
+
     }
 
 header nav.site_nav ul li a{
     text-decoration: none;
     color: var(--color_text_dark);
     font-weight: 700;
-    
+
 
 }
 
@@ -63,8 +65,8 @@ header nav.site_nav ul li a:hover{
 
 header div.main_header button.get_started{
     display: none;
-    
-}   
+
+}
 button.get_started{
     background: var(--color_vivid);
     border:none;
@@ -74,17 +76,18 @@ button.get_started{
     color: var(--color_text_clear);
     font-weight: 700;
     margin: 10px 5px;
-    
+
 }
 button.get_started:hover{
-    
+
 }
 
 /* /////////// MAIN ////////// */
 
 main div.upper_content{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+
 }
 
 main div.upper_content div.prim_description{
@@ -127,14 +130,17 @@ main div.main_content div.different{
     align-items: center;
 }
 
-
-main div.main_content div.different h2{
-    text-align: center;
-    color: var(--color_text_dark);
+h2{
     font-size: 2rem;
     font-weight: 700;
     line-height: 3rem;
     margin:10px 15px;
+
+}
+
+main div.main_content div.different h2{
+    text-align: center;
+    color: var(--color_text_dark);
 }
 
 
@@ -178,27 +184,190 @@ main div.main_content div.dual_vertical p{
 
 }
 
+/* ////////// FOOTER ////////// */
+
+footer div.upper_footer{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--color_vivid);
+}
+
+footer div.upper_footer h2{
+    text-align: center;
+    color: var(--color_text_clear);
+}
+
+footer div.upper_footer button.inverted{
+    color: var(--color_vivid);
+    background: var(--color_text_clear);
+    font-weight: 700;
+}
+
+footer div.bottom_footer{
+    padding-top: 20px;
+    background: var(--color_bkgrnd_dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div.bottom_footer form{
+    margin:20px;
+}
+
+footer div.bottom_footer form input{
+
+    border:none;
+    border-radius: 40px 40px 40px 40px;
+    font-weight: 700;
+    margin: 10px 5px;
+}
+
+footer div.bottom_footer form input[type=email]{
+    width: 200px;
+    height: 45px;
+    padding-left: 20px;
+}
+
+footer div.bottom_footer form input[type=submit]{
+    width: 75px;
+    height: 45px;
+    background: var(--color_vivid);
+    color: var(--color_text_clear);
+}
+
+footer div.bottom_footer nav.footer_site_nav ul{
+    padding:20px;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 190px;
+    width: 90vw;
 
 
+}
+
+footer div.bottom_footer nav.footer_site_nav ul li{
+    line-height: 2rem;
+    padding-left: 40px;
+}
 
 
+footer div.bottom_footer nav.footer_site_nav ul li a{
+    text-decoration: none;
+    color:var(--color_text_clear);
+    font-size: 0.8rem;
+}
 
+footer div.bottom_footer div.social{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer div.bottom_footer div.social nav ul.social_nav{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 90vw;
+    padding:12px;
+
+}
+
+footer div.bottom_footer div.social nav ul.social_nav li a i.fab{
+color: var(--color_text_clear);
+font-size: 2rem;
+}
+
+footer div.bottom_footer div.social img{
+    padding: 35px;
+}
+
+footer div.bottom_footer p{
+    color: var(--color_text_lightgr);
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding:20px;
+}
 
 
 @media (min-width: 460px){
 
-    
-    
-    
+
+
+
 }
 @media (min-width: 625px){
     header div.main_header i.fa-bars{
-        display:none; 
+        display:none;
     }
     header div.main_header nav.site_nav{
         display:initial;
     }
-    
+
+    main{
+        width: 90vw;
+    }
+    main div.upper_content{
+        flex-direction: row-reverse;
+        padding: 0 10%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main div.upper_content div.prim_description{
+        align-items: flex-start;
+    }
+
+    main div.upper_content div.prim_description h1{
+        text-align:left;
+    }
+
+    p.dark_small{
+        text-align: left;
+    }
+
+    main div.main_content{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    main div.main_content div.different{
+        padding-top:0px;
+        width: 30%;
+        align-items: flex-start;
+        }
+
+        main div.main_content div.different h2{
+            text-align: left;
+        }
+
+
+        main div.main_content div.dual_vertical{
+            padding-top:20px;
+            width: 45%;
+        }
+
+        main div.main_content div.dual_vertical h4{
+            background: none;
+            margin-left: 20px;
+
+        }
+
+        main div.main_content div.dual_vertical h4::before{
+        position:absolute;
+        transform: translateX(-100px);
+        }
+
+
+
 }
 
 
