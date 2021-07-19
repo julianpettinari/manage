@@ -9,6 +9,7 @@
 html{
     font-size: 16px;
     scroll-behavior: smooth;
+    
 }
 body{
     font-family: 'Be Vietnam', sans-serif;
@@ -79,10 +80,17 @@ button.get_started{
 
 }
 button.get_started:hover{
-
+    background: var(--color_vivid_hover);
+    cursor: pointer;
+    
 }
 
 /* /////////// MAIN ////////// */
+main{
+
+
+}
+
 
 main div.upper_content{
     display: flex;
@@ -123,7 +131,7 @@ main div.main_content{
 }
 
 main div.main_content div.different{
-    padding-top: 40px;
+    padding: 40px 0 40px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -184,6 +192,83 @@ main div.main_content div.dual_vertical p{
 
 }
 
+
+main div.comments div.cont_slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main div.comments h2{
+    color: var(--color_text_dark);
+    text-align: center;
+    margin: 40px;
+}
+
+main div.comments div.cont_slider div.slider{
+    margin:20px;
+    background: var(--color_bkgrnd_light);
+    /* width:1800px; */
+    display: flex;
+
+
+}
+
+main div.comments div.slide{
+    position:relative;
+    padding: 60px 55px;
+    width:450px;
+    height: 250px;
+}
+
+main div.comments div.slide img{
+    position:absolute;
+    left: calc(225px - 35px);
+    top:-35px;
+    width:70px;
+    height: 70px;
+}
+
+main div.comments h4{
+    color: var(--color_text_dark);
+    text-align: center;
+}
+
+main div.comments p{
+    margin-top: 20px;
+    text-align: center;
+    color:var(--color_text_light)
+
+}
+
+main div.comments nav.slider{
+    margin-bottom: 50px;
+}
+
+main div.comments nav.slider li{
+
+    display: inline;
+    
+}
+
+main div.comments nav.slider li i.fa-circle{
+    color: white;
+    border:solid 3px var(--color_vivid);
+    border-radius:50%;
+
+}
+
+main div.comments nav.slider li i.fa-circle:hover{
+    color:var(--color_vivid);
+}
+
+main div.comments div.cont_slider button.get_starded{
+    margin-bottom: 50px;
+}
+
+
+
 /* ////////// FOOTER ////////// */
 
 footer div.upper_footer{
@@ -203,6 +288,11 @@ footer div.upper_footer button.inverted{
     color: var(--color_vivid);
     background: var(--color_text_clear);
     font-weight: 700;
+}
+
+footer div.upper_footer button.inverted:hover{
+color: var(--color_vivid_hover);
+cursor: pointer;
 }
 
 footer div.bottom_footer{
@@ -232,11 +322,33 @@ footer div.bottom_footer form input[type=email]{
     padding-left: 20px;
 }
 
+footer div.bottom_footer form input[type=email]:invalid{
+    border:solid 1px var(--color_vivid);
+    content:"Please insert a valid email"
+
+
+}
+footer div.bottom_footer form span.feedback{
+    color: var(--color_vivid);
+    display: none;
+}
+
 footer div.bottom_footer form input[type=submit]{
     width: 75px;
     height: 45px;
     background: var(--color_vivid);
     color: var(--color_text_clear);
+}
+
+footer div.bottom_footer form input[type=submit]:hover{
+    background: var(--color_vivid_hover);
+    cursor: pointer;
+    
+}
+
+footer div.bottom_footer nav.footer_site_nav{
+    width: 90vw;
+
 }
 
 footer div.bottom_footer nav.footer_site_nav ul{
@@ -247,7 +359,6 @@ footer div.bottom_footer nav.footer_site_nav ul{
     justify-content: flex-start;
     align-items: flex-start;
     height: 190px;
-    width: 90vw;
 
 
 }
@@ -263,6 +374,9 @@ footer div.bottom_footer nav.footer_site_nav ul li a{
     color:var(--color_text_clear);
     font-size: 0.8rem;
 }
+footer div.bottom_footer nav.footer_site_nav ul li a:hover{
+    color: var(--color_vivid);
+}
 
 footer div.bottom_footer div.social{
     display: flex;
@@ -276,6 +390,7 @@ footer div.bottom_footer div.social nav ul.social_nav{
     align-items: center;
     list-style: none;
     width: 90vw;
+    max-width: 150px;
     padding:12px;
 
 }
@@ -283,6 +398,12 @@ footer div.bottom_footer div.social nav ul.social_nav{
 footer div.bottom_footer div.social nav ul.social_nav li a i.fab{
 color: var(--color_text_clear);
 font-size: 2rem;
+margin: 10px;
+}
+
+footer div.bottom_footer div.social nav ul.social_nav li a i.fab:hover{
+    color: var(--color_vivid);
+
 }
 
 footer div.bottom_footer div.social img{
@@ -366,9 +487,58 @@ footer div.bottom_footer p{
         transform: translateX(-100px);
         }
 
+        footer{
+
+        }
+
+        footer div.bottom_footer{
+            flex-flow: row wrap;
+            justify-content: space-around;
+            height: 250px;
+        }
+
+        footer div.bottom_footer div.social{
+        order:1;
+        flex-direction: column-reverse;
+        max-width: 20vw;
+        }
+
+        footer div.bottom_footer form{
+            order:3;
+        }
+        footer div.bottom_footer nav.footer_site_nav{
+            order:2;
+            width:50vw;
+            max-width: 500px;
+        }
+
+        footer div.bottom_footer p{
+        order: 4;
+        width: 90vh;
+        text-align: center;
+        right: 10%;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
+
+
+
+
+
 
 
 @media (min-width: 768px){
